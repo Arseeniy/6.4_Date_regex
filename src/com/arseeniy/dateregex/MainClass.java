@@ -1,5 +1,9 @@
 package com.arseeniy.dateregex;
 
+import com.arseeniy.dateregex.solution.SolutionClass;
+
+import static com.arseeniy.dateregex.solution.SolutionClass.*;
+
 public class MainClass {
 
     private static String stringByWords = "Ребе, Ви случайно не знаете, сколько тогда Иуда получил по нынешнему курсу?";
@@ -17,9 +21,9 @@ public class MainClass {
     private static String templateValue = "Ivan123, №12356947, 3, Иванов Д.С., менеджер";
 
     public static void main(String[] args) {
-        //System.out.println(getListOfWords(stringByWords));
-        //System.out.println(convertPhoneNumber(phoneNumbers));
-        //System.out.println(replaceString(initialPattern, templateKey, templateValue));
+        System.out.println(getListOfWords(stringByWords));
+        System.out.println(convertPhoneNumber(phoneNumbers));
+        System.out.println(replaceString(initialPattern, templateKey, templateValue));
 
     }
 }

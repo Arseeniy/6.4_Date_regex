@@ -2,6 +2,7 @@ package com.arseeniy.dateregex.solution;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,7 +21,7 @@ public class SolutionClass {
         matcher.reset();
         while (matcher.find()) {
             tempered = input.substring(matcher.start(), matcher.end());
-            result = result + tempered + "\n";
+            result = result + tempered.toLowerCase(Locale.ROOT) + "\n";
             if (tempered.length() > max.length()) {
                 max = tempered;
             }
